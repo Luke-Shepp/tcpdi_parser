@@ -1434,14 +1434,16 @@ class tcpdi_parser {
     }
 
     /**
-     * This method is automatically called in case of fatal error; it simply outputs the message and halts the execution.
-     * @param $msg (string) The error message
+     * This method is automatically called in case of fatal error; it simply outputs the message and halts the
+     * execution.
+     *
+     * @param string $msg The error message
      * @public
+     * @throws Exception
      * @since 1.0.000 (2011-05-23)
      */
     public function Error($msg) {
-        // exit program and print error
-        die("<strong>TCPDI_PARSER ERROR [{$this->uniqueid}]: </strong>".$msg);
+        throw new \Exception("TCPDI_PARSER ERROR [{$this->uniqueid}]: " . $msg);
     }
 
 } // END OF TCPDF_PARSER CLASS
