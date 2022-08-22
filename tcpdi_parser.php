@@ -1361,14 +1361,14 @@ class tcpdi_parser {
         if (!is_null($box) && $box[0] == PDF_TYPE_ARRAY) {
             $b =& $box[1];
             return array('x' => $b[0][1] / $k,
-                         'y' => $b[1][1] / $k,
-                         'w' => abs($b[0][1] - $b[2][1]) / $k,
-                         'h' => abs($b[1][1] - $b[3][1]) / $k,
-                         'llx' => min($b[0][1], $b[2][1]) / $k,
-                         'lly' => min($b[1][1], $b[3][1]) / $k,
-                         'urx' => max($b[0][1], $b[2][1]) / $k,
-                         'ury' => max($b[1][1], $b[3][1]) / $k,
-                         );
+                'y' => $b[1][1] / $k,
+                'w' => abs($b[0][1] - $b[2][1]) / $k,
+                'h' => abs($b[1][1] - $b[3][1]) / $k,
+                'llx' => min($b[0][1], $b[2][1]) / $k,
+                'lly' => min($b[1][1], $b[3][1]) / $k,
+                'urx' => max($b[0][1], $b[2][1]) / $k,
+                'ury' => max($b[1][1], $b[3][1]) / $k,
+            );
         } elseif (!isset ($page[1][1]['/Parent'])) {
             return false;
         } else {
