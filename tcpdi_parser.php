@@ -1,11 +1,12 @@
 <?php
 //============================================================+
 // File name   : tcpdi_parser.php
-// Version     : 1.1
+// Version     : 1.2
 // Begin       : 2013-09-25
-// Last Update : 2016-05-03
+// Last Update : 2022-08-22
 // Author      : Paul Nicholls - https://github.com/pauln
 // License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// Modifications : Luke Sheppard - http://luke-sheppard.com
 //
 // Based on    : tcpdf_parser.php
 // Version     : 1.0.003
